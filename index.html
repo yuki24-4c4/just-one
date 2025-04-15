@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Just One</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <h1 class="heading">Just One</h1>
+        
+        <div class="select-wrapper">
+          <select id="categorySelect" class="select">
+            <option value="">カテゴリーを選択</option>
+            <option value="食べ物・飲み物">食べ物・飲み物</option>
+            <option value="動物">動物</option>
+            <option value="場所・観光地">場所・観光地</option>
+            <option value="道具・家電">道具・家電</option>
+            <option value="仕事">仕事</option>
+            <option value="行事・イベント">行事・イベント</option>
+            <option value="ゲーム・遊び">ゲーム・遊び</option>
+          </select>
+        </div>
+
+        <button id="randomButton" class="button" disabled>
+          ランダム選択
+        </button>
+
+        <div class="topic-container">
+          <span class="topic-label">今回のお題は・・・</span>
+          <div id="result" class="result">
+            <!-- 選ばれたお題がここに表示される -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,123 @@
+/* 全体の設定 */
+body {
+  font-family: 'Inter', sans-serif; /* Google Fontsを使用 */
+  background: linear-gradient(to bottom right, #F19DB5, #D8B3A1);
+  color: #63524D; /* 文字色を指定 */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/* コンテナ */
+.container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+/* カード */
+.card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  width: 250px;
+  max-width: 1200px;
+  text-align: center; /* 子要素を中央揃え */
+}
+
+/* 見出し */
+.heading {
+  font-size: 3rem;
+  color: #63524D;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+/* セレクトボックス */
+.select-wrapper {
+  margin-bottom: 2rem;
+}
+
+.select {
+  font-size: 1.25rem;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  background-color: #fff;
+  color: #63524D;
+  transition: border-color 0.3s ease;
+  display: inline-block; /* 中央揃えを適用 */
+  margin-bottom: 1rem; /* ボタンとの間隔を調整 */
+}
+
+.select:focus {
+  border-color: #63524D;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(99, 82, 77, 0.6);
+}
+
+/* ボタン */
+.button {
+  font-size: 1.25rem;
+  padding: 1rem;
+  background-color: #63524D;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+  display: inline-block; /* 中央揃えを適用 */
+}
+
+.button:hover {
+  background-color: #4e403a;
+  transform: translateY(-2px);
+}
+
+.button:disabled {
+  background-color: #ddd;
+  cursor: not-allowed;
+}
+
+/* 結果表示 */
+.result {
+  font-size: 2rem;
+  color: #63524D;
+  margin-top: 1.5rem;
+  min-height: 3em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-out;
+}
+
+/* お題表示枠 */
+.topic-container {
+  position: relative;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 2rem;
+}
+
+.topic-label {
+  position: absolute;
+  top: -16px;
+  left: 20px;
+  background-color: #fff;
+  padding: 0 12px;
+  font-size: 1rem;
+  color: #63524D;
+  border-radius: 6px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
